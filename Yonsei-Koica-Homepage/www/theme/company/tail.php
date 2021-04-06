@@ -19,11 +19,11 @@ if (G5_IS_MOBILE) {
     <div id="ft_wr">
 
         <div id="ft_copy">
-        <a href="<?php echo get_pretty_url('content', 'company'); ?>">About YONSEI-KOICA</a>
-            <a href="<?php echo get_pretty_url('content', 'privacy'); ?>">개인정보처리방침</a>
+        <a href="<?php echo get_pretty_url('content', 'Welcome'); ?>">About YONSEI-KOICA</a>
+          <a href="<?php echo get_pretty_url('content', 'campus_map'); ?>">To visit our office</a>
+            <a href="https://www.yonsei.ac.kr/sc/etc/privacy.jsp"target="_blank">개인정보처리방침</a>
 
-            <a href="#">오시는길</a>
-            <a href="#">사이트맵</a>
+            <a href="https://www.yonsei.ac.kr/sc/etc/legal.jsp" target="_blank">법적고지</a>
         </div>
         <div id="ft_company">
             <p class="ft_info">TEL. 00-000-0000 FAX. 00-000-0000 서울 강남구 강남대로 1 <br>

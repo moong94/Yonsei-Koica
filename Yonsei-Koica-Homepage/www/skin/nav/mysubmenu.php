@@ -10,12 +10,12 @@
 <!--
 #mysubmenu ul {list-style:none; font-size:11pt; margin:0; padding:0;}
 #mysubmenu .leftmenu_b {color: white;width:320px;line-height:85px; background-color:#163B6E;border:0px solid gray;text-align:center;font-size:12pt;font-weight:bold;}
-#mysubmenu .leftmenu_s {line-height:35px; padding-left:20px; background-color:#fafafa;color: #163B6E;border-bottom:2px solid #123059;}
+#mysubmenu .leftmenu_s {line-height:35px; padding-left:20px; padding-right:20px; background-color:#fafafa;color: #163B6E;border-bottom:2px solid #123059; width:280px;}
 #mysubmenu .leftmenu_s a:hover{color:black}
 #mysubmenu a {text-decoration:none;}
 #mysubmenu a:hover {color:#e6e6e6;}
 #mysubmenu a:link, a:visited {color:white;}
-#mysubmenu .leftmenu_selected{line-height:35px; padding-left:20px; background-color:#4e6791;border-bottom:2px solid #123059;}
+#mysubmenu .leftmenu_selected{line-height:35px; padding-left:20px; padding-right:20px;width:280px; background-color:#4e6791;border-bottom:2px solid #123059;}
 
 //-->
 </style>

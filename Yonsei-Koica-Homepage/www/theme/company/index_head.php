@@ -141,7 +141,7 @@ add_javascript('<script src="'.G5_THEME_JS_URL.'/unslider.min.js"></script>', 10
 
         </div>
     </div>
-  
+
 
     <!--메인배너-->
     <script>
@@ -151,7 +151,8 @@ add_javascript('<script src="'.G5_THEME_JS_URL.'/unslider.min.js"></script>', 10
             delay: 5000,              //  The delay between slide animations (in milliseconds)
             keys: true,               //  Enable keyboard (left, right) arrow shortcuts
             dots: true,               //  Display dot navigation
-            fluid: false              //  Support responsive design. May break non-responsive designs
+            fluid: true,           //  Support responsive design. May break non-responsive designs
+            complete: function() {}, 
         });
 
         $('.unslider-arrow').click(function() {

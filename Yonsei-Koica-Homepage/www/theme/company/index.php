@@ -86,15 +86,22 @@ include_once(G5_THEME_PATH.'/index_head.php');
         echo latest('theme/basic', 'notice', 4, 18);
         ?>
     </div>
+
     <div class="lt_about">
-      <strong class="lt_title"><a href="  http://gmegm.cafe24.com/bbs/board.php?bo_table=gallery">Timetable</a></strong>
-        <ul>
+      <?php
+    // 이 함수가 바로 최신글을 추출하는 역할을 합니다.
+    // 사용방법 : latest(스킨, 게시판아이디, 출력라인, 글자수, 캐시타임, option);
+    // 테마의 스킨을 사용하려면 theme/basic 과 같이 지정
+    $options = array(
+        'thumb_width'    => 143, // 썸네일 width
+        'thumb_height'   => 89,  // 썸네일 height
+        'content_length' => 40   // 간단내용 길이
+    );
+    echo latest('theme/basic', 'thesis', 4, 25, 1, $options);
+    ?>
 
-            <li class="no_bd">게시물이 없습니다.</li>
-        </ul>
-
-        <div class="lt_more"><a href="  http://gmegm.cafe24.com/bbs/board.php?bo_table=gallery"><span class="sound_only">Timetable</span>더보기</a></div>
     </div>
+
     <div class="li_gall">
         <?php
         // 이 함수가 바로 최신글을 추출하는 역할을 합니다.
@@ -109,15 +116,38 @@ include_once(G5_THEME_PATH.'/index_head.php');
         ?>
     </div>
 </div>
+<!--
+<div id="link_bar">
+  <div class="quick_menu1">
+    <img src="/theme/company/img/quick_link/degreeprogram.png" alt="degreeprogram">
+  </div>
+  <div class="quick_menu2">
+	 <img src="/theme/company/img/quick_link/supports2.png" alt="supports">
+  </div>
+  <div class="quick_menu3">
+  	 <img src="/theme/company/img/quick_link/contactus.png" alt="contactus">
+  </div>
+</div>
+ -->
+
+<table style="margin: 31px 22px;" width=100% border="0">
+  <tr><td><a href="http://gmegm.cafe24.com/bbs/content.php?co_id=mastersdegree"><img src="/theme/company/img/quick_link/degreeprogram.png" alt="degreeprogram"></td>
+
+<td><a href="http://gmegm.cafe24.com/bbs/content.php?co_id=supports"><img src="/theme/company/img/quick_link/supports2.png" alt="supports"></td>
+<td><a href="http://gmegm.cafe24.com/bbs/content.php?co_id=info"><img src="/theme/company/img/quick_link/contactus.png" alt="contactus"></td>
+
+</tr>
 
 
-<div id="mou_icon">
-  <a href="https://www.yonsei.ac.kr/" target="_blank"><img src="/theme/company/img/mou/yonsei.jpg" style="width:230px;height:80px;margin-right:80px"></a>
+</table>
+<!-- <div id="mou_icon">
+  <!-- <a href="https://www.yonsei.ac.kr/" target="_blank"><img src="/theme/company/img/mou/yonsei.jpg" style="width:230px;height:80px;margin-right:80px"></a>
   <a href="https://yupa.yonsei.ac.kr/" target="_blank"><img src="/theme/company/img/mou/yonsei_administration.jpg" style="width:230px;height:80px;margin-right:80px"></a>
   <a href="http://koica.go.kr/sites/koica_en/index.do" target="_blank"><img src="/theme/company/img/mou/koica.jpg" style="height:80px;width:230px;margin-right:80px"></a>
   <a href="http://www.futuregov.re.kr/" target="_blank"><img src="/theme/company/img/mou/future.jpg" style="height:80px;width:230px;margin-right:80px"></a>
   <a href="http://bk21yupa.yonsei.ac.kr/" target="_blank"><img src="/theme/company/img/mou/bk.jpg" style="height:80px;width:230px"></a>
-</div>
+
+</div> -->
 
 <html lang="en">
     <head>
@@ -129,7 +159,7 @@ include_once(G5_THEME_PATH.'/index_head.php');
 			list-style: none outside none;
 		    padding-left: 0;
             margin: 0;
-  padding-bottom: 4%;
+
 		}
         .demo .item{
             margin-bottom: 60px;
@@ -138,6 +168,7 @@ include_once(G5_THEME_PATH.'/index_head.php');
 		    background-color: #FFFFFF;
 		    text-align: center;
 		    color: #FFF;
+          padding-bottom: 0.5%;
 		}
       .content-slider li img {
        max-width= 100%;
@@ -146,9 +177,11 @@ include_once(G5_THEME_PATH.'/index_head.php');
 		.content-slider h3 {
 		    margin: 0;
 		    padding: 70px 0;
+
 		}
 		.demo{
 			width: 800px;
+
 		}
     </style>
 
@@ -174,24 +207,22 @@ include_once(G5_THEME_PATH.'/index_head.php');
         <div class="item">
             <ul id="content-slider" class="content-slider">
                 <li>
-                  <a href="http://koica.yonsei.ac.kr/" target="_blank"><img src="../img/mou/yonsei.jpg"  width=50% height=40% alt=""/></a>
+                  <a href="https://www.yonsei.ac.kr/" target="_blank"><img src="/theme/company/img/mou/yonsei.jpg" width=60% height=40% alt=""/></a>
 
                 </li>
                 <li>
-                  <a href="https://www.edcfkorea.go.kr/" target="_blank"><img src="/theme/company/img/mou/yonsei.jpg" width=50% height=40% alt=""/></a>
+                  <a href="https://yupa.yonsei.ac.kr/" target="_blank"><img src="/theme/company/img/mou/yonsei_administration.jpg" width=60% height=40% alt=""/></a>
                 </li>
                 <li>
-                  <a href="http://www.unescap.org/" target="_blank"><img src="/theme/company/img/mou/yonsei.jpg" width=50% height=40% alt=""/></a>
+                  <a href="http://koica.go.kr/sites/koica_en/index.do" target="_blank"><img src="/theme/company/img/mou/koica.jpg" width=50% height=40% alt=""/></a>
                 </li>
                 <li>
-                  <a href="http://koica.go.kr" target="_blank"> <img src="/theme/company/img/mou/yonsei.jpg" width=50% height=40% alt=""/></a>
+                  <a href="http://www.futuregov.re.kr/" target="_blank"> <img src="/theme/company/img/mou/future.jpg" width=80% height=40% alt=""/></a>
                 </li>
                 <li>h
-                  <a href="http://www.aapa.asia/" target="_blank"><img src="/theme/company/img/mou/yonsei.jpg" width=50% height=40% alt=""/></a>
+                  <a href="http://bk21yupa.yonsei.ac.kr/" target="_blank"><img src="/theme/company/img/mou/bk.jpg" width=40% height=30% alt=""/></a>
                 </li>
-                <li>
-                  <a href="http://www.adb.org" target="_blank"><img src="/theme/company/img/mou/yonsei.jpg"width=50% height=40% alt=""/></a>
-                </li>
+
 
               </ul>
           </div>

@@ -1,5 +1,4 @@
 @charset "utf-8";
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 /* 초기화 */
 html {overflow-y:scroll}
 body {margin:0;padding:0;font-size:0.75em;font-family: Arial,Helvetica, sans-serif;}
@@ -103,7 +102,7 @@ a.gnb_1da {padding-right:10px;display:inline-block;  text-overflow: ellipsis;  o
 #container_title{position:absolute;top:0;right:0;width:1px;height:1px;overflow:hidden;font-size:0;text-indent:-999px}
 #sub_tit{background:url(../img/sub_bg.gif) repeat;margin-bottom:20px}
 #sub_tit img{margin-top: 114px;width:100%; height: 200px}
-#ctn_title {padding-bottom:30px;border-bottom:1px solid #eee;font-size:1.2em;font-weight:bold;text-align:center;font-size:2.5em;padding-top:0px; font-family: 'Berkshire Swash', cursive;}
+#ctn_title {padding-bottom:30px;border-bottom:1px solid #eee;font-size:1.2em;font-weight:bold;text-align:center;font-size:2.5em;padding-top:0px; font-family: Arial,Helvetica, sans-serif;}
 #sub_menu{text-align:center;width:1000px;margin:0 auto;position:relative;padding-bottom:30px}
 #sub_menu li{display:inline-block;margin-left:-1px}
 #sub_menu li a{display:inline-block;font-weight:bold;border:1px solid #d7d7d8;;width:175px; height:43px;line-height:43px;font-size:1.167em;background:#fff;color:#222;  text-overflow: ellipsis;  overflow: hidden;  white-space: nowrap;}
@@ -150,13 +149,17 @@ a.gnb_1da {padding-right:10px;display:inline-block;  text-overflow: ellipsis;  o
 #comp_if li.com_bg3 a{background:url(../img/com_bg3.jpg) no-repeat bottom right #e7f0f6}
 #comp_if li:first-child{border:none}
 #comp_lt{margin:0 auto;padding:25px;width:1631px;overflow:hidden}
-#comp_lt .li_notice{border-bottom:1px solid #eee;padding-bottom:30px;height:300px;width:32.5%;float:left;}
-#comp_lt .li_gall{border-bottom:1px solid #eee;padding-bottom:30px;padding-left: 10px;height:300px;width:32.5%;float:left;}
-#comp_lt .li_about{border-bottom:1px solid #eee;padding-bottom:30px;height:300px;width:32.5%;float:left;;}
+#comp_lt .li_notice{border-bottom:1px solid #eee;padding-bottom:30px;height:300px;width:31.5%;float:left;}
+#comp_lt .li_gall{border-bottom:1px solid #eee;padding-bottom:30px;margin-left: 1%;height:300px;width:31.5%;float:left;}
+#comp_lt .li_about{border-bottom:1px solid #eee;padding-bottom:30px;margin-left: 1%; height:300px;width:31.5%;float:left;;}
 
+#link_bar {margin: 0 auto; padding: 25px; width: 105%; overflow: hidden;}
+#link_bar .quick_menu1 {border-bottom:1px solid #eee; padding-bottom:20px; height: 130px;width:30%;float:left;border:0px solid}
+#link_bar .quick_menu2 {border-bottom:1px solid #eee; padding-bottom:20px; height: 130px;width:30%;float:left;border:0px solid;margin-left: 1%}
+#link_bar .quick_menu3 {border-bottom:1px solid #eee; padding-bottom:20px; height: 130px;width:30.1%;float:left;border:0px solid;margin-left: 1%}
 
 /*Main.About Us*/
-.lt_about{position:relative; width:32.5%;float:left;}
+.lt_about{position:relative; width:31.5%;margin-left: 1%;float:left;}
 .lt_about .lt_title{display: block; font-size: 1.833em;margin-bottom: 22px; margin-left: 20px}
 .lt_about li{border:1px solid #eee;position:relative;padding-left:143px;margin-top:12px;}
 .lt_about li a.lt_tit{display:block;font-size:1.167em;padding:15px 10px 8px;font-weight:bold;text-overflow: ellipsis;  overflow: hidden;  white-space: nowrap;}
