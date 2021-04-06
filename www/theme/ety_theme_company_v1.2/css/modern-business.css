@@ -1,0 +1,414 @@
+/*
+ * BOOTSTRAP 4.X 기반
+ * http://ETY.KR
+ * 상업적 또는 영리로 이용 가능하며 제작의뢰 받아서 유료로 작업을 해도 됩니다.
+ * 배포,재배포는 에티아시아,소프트존 에서만 가능하며 솔루션으로 재판매할 수 없습니다.
+	
+	font-family: 'Roboto', sans-serif;
+	font-family: 'Nanum Gothic', sans-serif;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Raleway', sans-serif;
+
+ * Start Bootstrap - Modern Business (https://startbootstrap.com/template-overviews/modern-business)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+ */
+
+
+body {
+
+}
+
+
+
+a { color:#666666; }
+a:hover { color:gray; text-decoration: none; }
+.footer ul li a{color:#fff;}
+.footer ul li a:hover{color:#666;}
+
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+.navbar .dropdown.show a:active { 
+  background-color: #6c757d;
+}
+.bg-white {
+    background-color: #ffffff!important;
+	box-shadow: rgba(0, 0, 0, 0.11765) 0px 1px 3px;
+    background-color: rgba(255, 255, 255, 0.98);
+}
+.ko1{font-family: 'Noto Sans KR';}
+.ko2{font-family: 'Gulim';}
+.ko3{font-family: 'Nanum Gothic', sans-serif;}
+.en1{font-family: 'Roboto', sans-serif;}
+.en2{font-family: 'Open Sans', sans-serif;}
+.en3{font-family: 'Raleway', sans-serif;}
+.ko_12 { font-family: 'Noto Sans KR', sans-serif;font-size:12px; }
+.ko_13 { font-family: 'Noto Sans KR', sans-serif;font-size:13px; }
+.ko_14 { font-family: 'Noto Sans KR', sans-serif;font-size:14px; }
+.ko_15 { font-family: 'Noto Sans KR', sans-serif;font-size:15px; }
+.ko_16 { font-family: 'Noto Sans KR', sans-serif;font-size:16px; }
+.ko_17 { font-family: 'Noto Sans KR', sans-serif;font-size:17px; font-weight:400; line-height:1.8; }
+.ko_18 { font-family: 'Noto Sans KR', sans-serif;font-size:18px; }
+.ko_19 { font-family: 'Noto Sans KR', sans-serif;font-size:19px; }
+.ko_20 { font-family: 'Noto Sans KR', sans-serif;font-size:20px; }
+
+.f12{font-size:12px;}
+.f13{font-size:13px;}
+.f14{font-size:14px;}
+.f15{font-size:15px;}
+.f16{font-size:16px;}
+.f17{font-size:17px;}
+.f18{font-size:18px;}
+.f19{font-size:19px;}
+.f20{font-size:20px;}
+.f21{font-size:21px;}
+.f22{font-size:22px;}
+.f23{font-size:23px;}
+.f24{font-size:24px;}
+.f25{font-size:25px;}
+
+.fw1{font-weight:100;}
+.fw2{font-weight:200;}
+.fw3{font-weight:300;}
+.fw4{font-weight:400;}
+.fw5{font-weight:500;}
+.fw6{font-weight:600;}
+.fw7{font-weight:700;}
+
+.color-sky-blue {background:#cce5ff;}
+.color-green{background:#d4edda;}
+
+.carousel-item {
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+/*
+HEAD-LINE
+**********/
+h3 {
+  text-align: center;
+}
+
+.subtitle {
+  margin: 0 0 50px; 0;
+}
+.head-line {
+  line-height: 0.5;
+  text-align: center;
+}
+.head-line span {
+  display: inline-block;
+  position: relative;  
+}
+.head-line span:before,
+.head-line span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  top: 0;
+  width: 100px;
+}
+.head-line span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.head-line span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+.subbg{background:url('../img/subbg.jpg');}
+
+/*
+네비
+**********/
+.navbar-brand { font-size:25px; font-weight:bold; }
+.navbar-nav li { padding:10px 0 10px 15px; }
+/*
+.navbar {
+  min-height: 80px;
+}
+
+.navbar-brand {
+  padding: 0 15px;
+  height: 80px;
+  line-height: 80px;
+}
+*/
+.bg-dark {
+    background-color: #000000!important;
+}
+
+#tnb {background:#fff;}
+#tnb h3 {position:absolute;font-size:0;line-height:0;overflow:hidden}
+#tnb ul {margin:0 auto;width: 1120px;background:#333333;zoom:1}
+#tnb ul:after {display:block;visibility:hidden;clear:both;content:""}
+#tnb li:first-child {border-right:1px solid #444444}
+#tnb li {float:right;border-left:1px solid #444444;margin-bottom:-1px;}
+#tnb a {display:inline-block;padding:0 10px;color:#eee;line-height:35px;}
+#tnb a:focus, #tnb a:hover {color:#4ea1d3;background:#fafafa;font-family:'Gulim'; font-size:12px}
+#tnb .tnb_admin a{color:#ff0000;}
+#tnb .tnb_left{float:left}
+#tnb .tnb_left a{padding:0 14px}
+#tnb .tnb_cart{border-right:1px solid #ddd;}
+#tnb .tnb_community{border-right:1px solid #ddd}
+#tnb .tnb_community i{font-size:15px}
+#tnb .tnb_community{background:#e7e7e7;font-weight:bold;}
+#tnb .tnb_community:focus, #tnb .tnb_community:hover {color:#333;border-bottom:0}
+#tnb .tnb_community a{color:#4ea1d3;border-bottom:1px solid #e7e7e7}
+#tnb-left {float:left; margin-top:5px}
+#tnb ul li a{font-size:12px; font-weight:bold; font-family:'Gulim'}
+
+/*
+헤딩
+**********/
+.center-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.center-heading p {
+    margin-top: 10px;
+    font-family: 'Noto Sans Regular', sans-serif;
+}
+.center-line {
+    display: inline-block;
+    width: 70px;
+    height: 1px;
+    border-top: 1px solid #bbb;
+    margin: auto;
+}
+
+/*
+아이콘박스
+**********/
+.box > .icon { text-align: center; position: relative; }
+.box > .icon > .image { position: relative; z-index: 2; margin: auto; width: 88px; height: 88px; border: 8px solid white; line-height: 88px; border-radius: 50%; background: #6c757d; vertical-align: middle; }
+.box > .icon > .image > i { font-size: 36px !important; color: #fff !important; }
+.box > .icon > .info { margin-top: -24px; border: 1px solid #e0e0e0; padding: 15px 0 10px 0; }
+.box > .icon > .info > h3.title { margin-top:20px; font-family: "Noto Sans KR",sans-serif !important; font-size: 20px; color: #222; font-weight: 500; }
+.box > .icon > .info > p { font-family: 'Noto Sans KR', sans-serif; font-weight:300; color: #666; line-height: 1.7; margin: 20px; text-align:left;}
+.box > .icon > .info > .more a { font-family: "Roboto",sans-serif !important; font-size: 12px; color: #222; line-height: 12px; text-transform: uppercase; text-decoration: none; }
+.box .space { height: 30px; }
+
+/*
+parallax
+**********/
+.parallax-window {
+    position: relative;
+    min-height: 350px;
+    background: #3e3b3b52;
+}
+.para_count {
+	padding-top:50px;
+}
+
+/*
+callbox
+**********/
+.callbox { background:#f2f2f2; margin-top:50px; padding-top:20px; padding-bottom:30px; }
+
+
+/*
+sns_icon
+**********/
+
+.sns_icon{
+	list-style: none;
+	text-align: center;
+	width: 80px;
+	cursor: pointer;
+	display: inline;
+	padding:5px;
+}
+.sns_icon .fab{ font-size:30px; }
+
+.sns_icon .fa-facebook-f{ color:#a2a2a2; font-size:20px; }
+.sns_icon .fa-instagram{ color:#a2a2a2; font-size:20px; }
+.sns_icon .fa-twitter{ color: #a2a2a2; font-size:20px; }
+
+.sns_icon a .fa-facebook-f:hover{ color:#3b5998; font-size:20px; }
+.sns_icon a .fa-instagram:hover{ color:#dd4b39; font-size:20px; }
+.sns_icon a .fa-twitter:hover{ color: #55acee; font-size:20px; }
+
+/*
+footer
+*/
+
+.a-link a { color:#ffffff; }
+.sns_icon a { color:#ffffff; }
+.bg-gray{background:#454545;}
+.bg-gray div{padding:15px;}
+
+/*
+상하 좌우 조절
+**********/
+.margin-top-10 {
+	margin-top:10px;
+}
+.margin-top-20 {
+	margin-top:20px;
+}
+.margin-top-30 {
+	margin-top:30px;
+}
+.margin-top-40 {
+	margin-top:40px;
+}
+.margin-top-50 {
+	margin-top:50px;
+}
+.margin-top-60 {
+	margin-top:60px;
+}
+.margin-top-70 {
+	margin-top:70px;
+}
+.margin-top-80 {
+	margin-top:80px;
+}
+.margin-top-90 {
+	margin-top:90px;
+}
+.margin-top-100 {
+	margin-top:100px;
+}
+.margin-bottom-10 {
+	margin-bottom:10px;
+}
+.margin-bottom-20 {
+	margin-bottom:20px;
+}
+.margin-bottom-30 {
+	margin-bottom:30px;
+}
+.margin-bottom-40 {
+	margin-bottom:40px;
+}
+.margin-bottom-50 {
+	margin-bottom:50px;
+}
+.margin-bottom-60 {
+	margin-bottom:60px;
+}
+.margin-bottom-70 {
+	margin-bottom:70px;
+}
+.margin-bottom-80 {
+	margin-bottom:80px;
+}
+.margin-bottom-90 {
+	margin-bottom:90px;
+}
+.margin-bottom-100 {
+	margin-bottom:100px;
+}
+.margin-left-10 {
+	margin-left:10px;
+}
+.margin-left-20 {
+	margin-left:20px;
+}
+.margin-left-30 {
+	margin-left:30px;
+}
+.margin-left-40 {
+	margin-left:40px;
+}
+.margin-left-50 {
+	margin-left:50px;
+}
+.margin-left-60 {
+	margin-left:60px;
+}
+.margin-left-70 {
+	margin-left:70px;
+}
+.margin-left-80 {
+	margin-left:80px;
+}
+.margin-left-90 {
+	margin-left:90px;
+}
+.margin-left-100 {
+	margin-left:100px;
+}
+.margin-right-10 {
+	margin-right:10px;
+}
+.margin-right-20 {
+	margin-right:20px;
+}
+.margin-right-30 {
+	margin-right:30px;
+}
+.margin-right-40 {
+	margin-right:40px;
+}
+.margin-right-50 {
+	margin-right:50px;
+}
+.margin-right-60 {
+	margin-right:60px;
+}
+.margin-right-70 {
+	margin-right:70px;
+}
+.margin-right-80 {
+	margin-right:80px;
+}
+.margin-right-90 {
+	margin-right:90px;
+}
+.margin-right-100 {
+	margin-right:100px;
+}
+
+.p-r{position: relative;}
+.p-a{position: absolute;}
+/*
+.p-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+*/
+.para-text h2{line-height:2.5;}
+.display-4 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.color_666{color:#666;}
+.bg-gray2{
+	background:#f2f2f2;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.heading{
+	font-size: 18px;
+	line-height: 24px;
+}
+.pro-icon i{font-size:24px;}
+
+.navbar-toggler {
+    background-color: #454545;
+}

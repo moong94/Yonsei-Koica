@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* 최근게시물 스킨 (latest) */
+
+.lt_gal{padding:35px 20px 0}
+.lt_gal a{text-decoration:none;}
+.lt_gal li{position:relative;margin-bottom:20px}
+.lt_gal img{width:100%;height:auto;}
+.lt_gal .lt_tit{position:absolute;bottom:0;left:0;color:#fff;padding:10px 3%; background:rgba(0,0,0,0.7);display:block;width:94%;overflow:hidden;text-overflow: ellipsis;white-space: nowrap;font-size:1.167em}
+.lt_gal h2{position:relative;background:url(img/gal_bg.gif) repeat-x 50% ;margin-bottom:10px}
+.lt_gal h2 .lt_title {display:inline-block;padding: 0;line-height:25px;padding-left:28px;font-size:1.333em;background:#fff;padding-right:10px;color:#3e3c52}
+.lt_gal h2 .lt_title span{background:url(img/gal.gif ) no-repeat 50% 50%;width:20px;height:20px;border-radius:30px;border:1px solid #3e3c52;display:inline-block;position:absolute;top:0;left:0}
+.lt_gal .no_img{display:table-cell; vertical-align: middle;font-weight: bold;font-size: 1.3em;color: #bbb;text-transform: uppercase;text-align:center;background: #eee}
+.lt_gal .lt_image{text-align:center;display:block;}
+.lt_gal .lt_image span{background:#eee;display:block}
+.lt_gal .no_lt{text-align:center;width:100%;padding:30px 0}
+
+@media all and (min-width:500px){
+.lt_gal li{float:left;width:48%;margin:0 1% 15px}
+}

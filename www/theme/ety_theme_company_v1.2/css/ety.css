@@ -1,0 +1,42 @@
+@media (min-width: 1px) and (max-width: 1089px) {
+
+	.fixed-header {display:none;}
+	.login{display:block}
+	.ety-mt{margin-top:83px;}
+	.ety-mt-main{margin-top:63px;}
+	.ety-mt-qa{margin-top:110px;}
+	.mpage{display:block;}
+	.ppage{display:none;}
+	.spage{overflow-x:auto;white-space: nowrap;}
+	
+}
+
+@media (min-width: 1090px) {
+
+	.fixed-header {display:block;}
+	.login{display:none}
+	.ety-mt-main{margin-top:110px;}
+	.ety-mt{margin-top:130px;}
+	.ety-mt-qa{margin-top:150px;}
+	.mpage{display:none;}
+	.ppage{display:block;}
+
+	/* header */
+	.fixed-header {
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 1030;
+	}
+	.top-line { background:#333333; }
+	.fixed-top {
+		position: fixed;
+		top: 34px;
+		right: 0;
+		left: 0;
+		z-index: 1030;
+	}
+
+
+}
