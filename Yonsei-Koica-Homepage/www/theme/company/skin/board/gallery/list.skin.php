@@ -7,7 +7,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 ?>
 
 <!-- 게시판 목록 시작 { -->
-<div id="bo_gall" style="width:<?php echo $width; ?>">
+<div id="bo_gall" style="display:flow-root">
 
     <?php if ($is_category) { ?>
     <nav id="bo_cate">
@@ -51,7 +51,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
             $('#sfl').fancySelect();
         </script>
 
-        
+
     </div>
 
     <form name="fboardlist"  id="fboardlist" action="<?php echo G5_BBS_URL; ?>/board_list_update.php" onsubmit="return fboardlist_submit(this);" method="post">
@@ -137,7 +137,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                      ?>
                 </li>
                 <li class="gall_if"><span class="gall_subject">작성자 </span><?php echo $list[$i]['name'] ?><span class="gall_subject">작성일 </span><?php echo $list[$i]['datetime2'] ?></li>
-                
+
             </ul>
         </li>
         <?php } ?>

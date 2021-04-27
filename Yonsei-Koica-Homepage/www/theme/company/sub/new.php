@@ -30,7 +30,7 @@ include_once(G5_PATH.'/head.php');
 
 
 
-
+asdasd
 
 <!-- 여기 아래부터 모든 HTML 요소 구성 끝 -->
 

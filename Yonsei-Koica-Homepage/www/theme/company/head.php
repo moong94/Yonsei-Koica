@@ -1,5 +1,5 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
 <?php
 if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 
@@ -93,7 +93,8 @@ add_javascript('<script src="'.G5_THEME_JS_URL.'/fancySelect.js"></script>', 10)
 <!-- 콘텐츠 시작 { -->
 <div id="wrapper">
     <div id="sub_tit"><?php
-        echo "<img src='/theme/company/img/$co_id.jpg'/>";
+        // echo "<img src='/theme/company/img/$co_id.jpg'/>";
+         echo "<img src='/theme/company/img/tab_img.jpg'/>";
     ?>
 
 

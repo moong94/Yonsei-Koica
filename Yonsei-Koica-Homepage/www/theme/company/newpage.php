@@ -9,7 +9,8 @@ if (G5_IS_MOBILE) {
 
 include_once(G5_THEME_PATH.'/index_head.php');
 ?>
-adsadasd
+이공간은
+Alumni Network 공간입니다.
 <?php
 include_once(G5_THEME_PATH.'/tail.php');
 ?>

@@ -97,7 +97,7 @@ include_once(G5_THEME_PATH.'/index_head.php');
         'thumb_height'   => 89,  // 썸네일 height
         'content_length' => 40   // 간단내용 길이
     );
-    echo latest('theme/basic', 'thesis', 4, 25, 1, $options);
+    echo latest('theme/basic', 'FAQ', 4, 25, 1, $options);
     ?>
 
     </div>
@@ -140,15 +140,15 @@ include_once(G5_THEME_PATH.'/index_head.php');
 
 
 </table>
-<!-- <div id="mou_icon">
-  <!-- <a href="https://www.yonsei.ac.kr/" target="_blank"><img src="/theme/company/img/mou/yonsei.jpg" style="width:230px;height:80px;margin-right:80px"></a>
-  <a href="https://yupa.yonsei.ac.kr/" target="_blank"><img src="/theme/company/img/mou/yonsei_administration.jpg" style="width:230px;height:80px;margin-right:80px"></a>
-  <a href="http://koica.go.kr/sites/koica_en/index.do" target="_blank"><img src="/theme/company/img/mou/koica.jpg" style="height:80px;width:230px;margin-right:80px"></a>
-  <a href="http://www.futuregov.re.kr/" target="_blank"><img src="/theme/company/img/mou/future.jpg" style="height:80px;width:230px;margin-right:80px"></a>
-  <a href="http://bk21yupa.yonsei.ac.kr/" target="_blank"><img src="/theme/company/img/mou/bk.jpg" style="height:80px;width:230px"></a>
+ <div id="mou_icon">
+<a href="https://www.yonsei.ac.kr/" target="_blank"><img src="/theme/company/img/mou/yonsei.jpg"></a>
+  <a href="https://yupa.yonsei.ac.kr/" target="_blank"><img src="/theme/company/img/mou/yonsei_administration.jpg"></a>
+  <a href="http://koica.go.kr/sites/koica_en/index.do" target="_blank"><img src="/theme/company/img/mou/koica.jpg"></a>
+  <a href="http://www.futuregov.re.kr/" target="_blank"><img src="/theme/company/img/mou/future.jpg"></a>
+  <a href="http://bk21yupa.yonsei.ac.kr/" target="_blank"><img src="/theme/company/img/mou/bk.jpg"></a>
 
-</div> -->
-
+</div>
+<!--
 <html lang="en">
     <head>
     <meta charset="utf-8">
@@ -226,7 +226,7 @@ include_once(G5_THEME_PATH.'/index_head.php');
 
               </ul>
           </div>
-
+-->
 <?php
 include_once(G5_THEME_PATH.'/tail.php');
 ?>

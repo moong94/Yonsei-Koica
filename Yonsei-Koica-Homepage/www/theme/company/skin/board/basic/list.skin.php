@@ -25,7 +25,9 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 <!-- } 게시판 카테고리 끝 -->
 
 <!-- 게시판 목록 시작 { -->
-<div id="bo_list" style="width:<?php echo $width; ?>">
+<!-- <div id="bo_list" style="width:<?php echo $width; ?>; float:left"> -->
+
+  <div id="bo_list" style="display:flow-root;">
     <!-- 게시판 페이지 정보 { -->
     <div id="bo_list_total">
         <span>Total <?php echo number_format($total_count) ?>건</span>
@@ -158,7 +160,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
             <li><input type="submit" name="btn_submit" value="선택이동" onclick="document.pressed=this.value"></li>
         </ul>
         <?php } ?>
-        
+
         <?php if ($rss_href || $write_href) { ?>
         <ul class="btn_bo_user">
             <?php if ($rss_href) { ?><li><a href="<?php echo $rss_href ?>" class="btn_b01">RSS</a></li><?php } ?>
@@ -172,7 +174,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
         <!-- 페이지 -->
     </div>
     <?php } ?>
-    
+
 
     </form>
 </div>

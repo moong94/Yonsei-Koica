@@ -26,9 +26,10 @@ if (G5_IS_MOBILE) {
             <a href="https://www.yonsei.ac.kr/sc/etc/legal.jsp" target="_blank">법적고지</a>
         </div>
         <div id="ft_company">
-            <p class="ft_info">TEL. 00-000-0000 FAX. 00-000-0000 서울 강남구 강남대로 1 <br>
-            대표:홍길동 사업자등록번호:000-00-00000 개인정보관리책임자:홍길동</p>
-            <p class="ft_copy">Copyright &copy; <b>소유하신 도메인.</b> All rights reserved.</p>
+            <p class="ft_info">Tel: +82-2-2123-2954 &nbsp;&nbsp;&nbsp;Fax:+82-2-2123-8118 <br>Address: Yonhee Hall 315-2, 50 Yonsei-ro
+,Seodaemun-gu, Seoul, 03722,Republic of Korea <br>
+          Email: yupa.gmegm@gmail.com</p>
+            <p class="ft_copy">Copyright &copy; <b>gmegm.yonsei.ac.kr</b> All rights reserved.</p>
         </div>
     </div>
 </div>

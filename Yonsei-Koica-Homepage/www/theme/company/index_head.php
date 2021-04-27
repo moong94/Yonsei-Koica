@@ -136,10 +136,10 @@ add_javascript('<script src="'.G5_THEME_JS_URL.'/unslider.min.js"></script>', 10
             <a href="#" class="unslider-arrow prev">Previous slide</a>
             <a href="#" class="unslider-arrow next">Next slide</a>
         </div>
-        <div id="rolling">
-            <h2>롤린롤린롤린<br>롤린롤린롤린</h2>
+        <!-- <div id="rolling">
+            <h2>YONSEI<br> THE TRUTH WILL MAKE YOU FREE</h2>
 
-        </div>
+        </div> -->
     </div>
 
 
@@ -152,7 +152,7 @@ add_javascript('<script src="'.G5_THEME_JS_URL.'/unslider.min.js"></script>', 10
             keys: true,               //  Enable keyboard (left, right) arrow shortcuts
             dots: true,               //  Display dot navigation
             fluid: true,           //  Support responsive design. May break non-responsive designs
-            complete: function() {}, 
+            complete: function() {},
         });
 
         $('.unslider-arrow').click(function() {
