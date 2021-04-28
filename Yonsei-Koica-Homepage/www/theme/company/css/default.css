@@ -97,7 +97,7 @@ a.gnb_1da {padding-right:10px;display:inline-block;  text-overflow: ellipsis;  o
 
 /*서브_중간레이아웃 */
 #wrapper{z-index:5;width:100%;min-width:1000px;zoom:1;margin:0;}
-#container{width:1314px;position:relative;margin:auto;}
+#container{width:1314px;margin:auto;}
 #container:after {display:block;visibility:hidden;clear:both;content:""}
 #container_title{position:absolute;top:0;right:0;width:1px;height:1px;overflow:hidden;font-size:0;text-indent:-999px}
 #sub_tit{background:url(../img/sub_bg.gif) repeat;margin-bottom:20px}

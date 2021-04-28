@@ -7,6 +7,6 @@
 #ctt_con {padding:10px 0;line-height:2em}
 .ctt_img {text-align:center}
 
-#ctt_con img {max-width:90%;height:auto}
+/* #ctt_con img {width:70%;height:auto;display:block;margin:auto} */
 
 #ctt_himg img, #ctt_timg img {max-width:100%;height:auto}
