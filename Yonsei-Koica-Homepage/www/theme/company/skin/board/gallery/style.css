@@ -86,7 +86,8 @@
 
 /* 갤러리 목록 */
 #bo_gall h2 {margin:0;padding:0;width:1px;height:1px;font-size:0;line-height:0;overflow:hidden}
-#bo_gall #gall_ul {margin:10px 0 0;padding:0;list-style:none;zoom:1}
+/* #bo_gall #gall_ul {margin:10px 0 0;padding:0;list-style:none;zoom:1} */
+#bo_gall #gall_ul {margin:10px 300px 0;padding:0;list-style:none;zoom:1} 
 #bo_gall #gall_ul:after {display:block;visibility:hidden;clear:both;content:""}
 #bo_gall .gall_li {float:left;margin:0 10px 30px 0;border:1px solid #dadada;position:relative}
 

@@ -20,7 +20,7 @@
 //-->
 </style>
 
-<div id="mysubmenu" style="float: left;margin-right:30px; margin-left:30px;margin-top:70px; z-index:1; position:fixed">
+<div id="mysubmenu" style="float: left;margin-right:30px; margin-left:30px;margin-top:20px; z-index:1; position:fixed">
     <?php
     $sql = " select *
                 from {$g5['menu_table']}

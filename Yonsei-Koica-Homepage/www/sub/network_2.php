@@ -16,8 +16,7 @@ ul.myMenu > li ul.submenu > li:hover { background:#5981B7; }
 #network_nav .leftmenu_net{color:white; width: 320px;line-height: 85px;background-color: #163B6E;border:0px solid gray;text-align: center;font-size: 12pt; font-weight: bold;}
 #network_nav .leftmenu_s_net {line-height:35px;padding-left:20px;padding-right:20px;background-color:#fafafa;color: #163B6E;border-bottom:2px solid #123059;width:280px;}
 #network_nav .leftmenu_s_selected{line-height:35px; padding-left:20px; padding-right:20px;width:280px; background-color:#4e6791;border-bottom:2px solid #123059;color:white}
-#network_nav .leftmenu_m_net{line-height:35px;padding-left:20px;padding-right:20px;background-color:#fafafa;color: #163B6E;border-bottom:2px solid #123059;width:280px;  display:block;}
-#network_nav .leftmenu_sub_menu{ display:inline-block; width:319px; padding:5px 10px; background:#163B6E; border:1px solid #163B6E; text-align:center;font-size: 12pt;}
+
   </style>
 
 </head>
@@ -117,7 +116,11 @@ add_javascript('<script src="'.G5_THEME_JS_URL.'/fancySelect.js"></script>', 10)
                 </li>
                 </a>
                   <ul>
-                      <a href="http://gmegm.cafe24.com/bbs/board.php?bo_table=notice" target="_self">
+                      <a href="https://gmegm.cafe24.com/sub/network_2.php" target="_self">
+                      <li class="leftmenu_s_selected">
+
+                      network2</li></a>
+                                  <a href="http://gmegm.cafe24.com/bbs/board.php?bo_table=notice" target="_self">
                       <li class="leftmenu_s_net">
 
                       News &amp; Notices</li></a>
@@ -134,15 +137,11 @@ add_javascript('<script src="'.G5_THEME_JS_URL.'/fancySelect.js"></script>', 10)
 
                       Gallery</li></a>
                                   <a href="http://gmegm.cafe24.com/sub/network.php" target="_self">
-                      <li class="leftmenu_s_selected">
+                      <li class="leftmenu_s_net">
 
                       Alumni Network</li></a>
-        </ul>
-          <li class="leftmenu_sub_menu_net">
-
-          Alumni Network</li></a>
-
-</ul>
+                  </ul>
+          </ul>
 
 
       </div>
