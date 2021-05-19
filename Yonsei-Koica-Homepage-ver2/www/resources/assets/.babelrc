@@ -1,0 +1,24 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": [
+          "last 3 versions",
+          "ie >= 9"
+        ],
+        "useBuiltIns": "usage",
+        "corejs": {
+          "version": 3
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties",
+    ["@babel/plugin-transform-runtime", {
+      "regenerator": true,
+      "corejs": 3
+    }]
+  ]
+}

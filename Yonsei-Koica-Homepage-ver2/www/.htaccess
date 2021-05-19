@@ -1,0 +1,59 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>
+
+    RewriteEngine On
+
+    # Deny hidden files(.*)
+    # ignores '.well-known/*'
+    RewriteCond %{REQUEST_FILENAME} -f
+    RewriteRule ^\.well-known/.+$ - [L]
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} !-f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d [OR]
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^\. - [L,R=404]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+    # allow for phpMyAdmin
+    RewriteCond %{REQUEST_FILENAME} -f
+    RewriteRule ^phpMyAdmin/.* - [L]
+
+    RewriteCond %{REQUEST_FILENAME} -f
+    RewriteRule ^index.php$ - [L]
+    RewriteCond %{REQUEST_FILENAME} -f
+    RewriteRule ^web_installer/index.php - [L]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^web_installer web_installer/index.php [L]
+
+    RewriteCond %{REQUEST_FILENAME} -f
+    RewriteRule \.php$ index.php [L]
+
+    # Allow
+    RewriteCond %{REQUEST_FILENAME} -f
+    RewriteRule ^assets/.* - [L]
+    RewriteCond %{REQUEST_FILENAME} -f
+    RewriteRule ^plugins/.* - [L]
+    RewriteCond %{REQUEST_FILENAME} -f
+    RewriteRule ^storage/app/public/.* - [L]
+    RewriteCond %{REQUEST_FILENAME} -f
+    RewriteRule ^favicon.*$ - [L]
+    RewriteCond %{REQUEST_FILENAME} -f
+    RewriteRule ^robots.txt$ - [L]
+    RewriteCond %{REQUEST_FILENAME} -f
+    RewriteRule ^[a-zA-Z0-9]+\.html?$ - [L]
+
+    # Standard routes
+    RewriteRule ^ index.php [L]
+</IfModule>
+
+## You may need to uncomment the following line for some hosting environments
+#php_value default_charset UTF-8
+#<IfModule mod_url.c>
+#CheckURL On
+#ServerEncoding UTF-8
+#</IfModule>

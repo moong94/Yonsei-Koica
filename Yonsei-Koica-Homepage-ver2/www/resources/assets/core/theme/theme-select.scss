@@ -1,0 +1,212 @@
+@import "../settings/css/bootstrap/variables";
+@import "../settings/css/bootstrap/mixins";
+@import "../settings/css/bootstrap/utilities";
+
+/* reset */
+.theme-select-list,
+.theme-select-list ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.theme-select-list {
+  .theme-item {
+    margin-top: 20px;
+    border: 1px solid #e0e0e0;
+    border-top: 0 none;
+
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    > ul {
+      > li {
+        background-color: #fff;
+      }
+
+      > .theme-new-config-area {
+        text-align: right;
+
+        > button {
+          margin: 10px 10px 10px;
+        }
+      }
+    }
+
+    &.blank-theme-item {
+      display: flex;
+      align-items: center;
+      border: 1px solid #e0e0e0;
+      background-color: #fff;
+
+      .blank-theme-item__text {
+        flex: 1;
+        padding-left: 15px;
+      }
+
+      .skin-select-btn {
+        padding: 15px 10px;
+
+        .btn {
+          i {
+            display: none;
+
+            &.visible-xs {
+              font-size: 18px;
+            }
+          }
+
+          &.on {
+            border-color: transparent;
+            background-color: #6f8dff;
+            color: #fff;
+
+            i {
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .theme-desc {
+    position: relative;
+    min-height: 100px;
+    padding: 15px 200px 15px 15px;
+    border-top: 1px solid #e4e4e4;
+    background-color: #f5f6fe;
+
+    img {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      max-width: 98px;
+      max-height: 70px;
+    }
+
+    strong {
+      display: block;
+      margin-top: 10px;
+      font-size: 18px;
+      font-weight: normal;
+    }
+  }
+
+  .btn-right {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -16px;
+
+    .btn {
+      i {
+        margin-right: 3px;
+        font-size: 15px;
+        vertical-align: middle;
+        padding-bottom: 2px;
+      }
+    }
+  }
+
+  ul {
+    li {
+      position: relative;
+      border-top: 1px solid #e4e4e4;
+
+      @include clearfix;
+
+      .skin-select-btn {
+        float: left;
+        height: 100%;
+        padding: 15px 10px;
+
+        .btn {
+          i {
+            display: none;
+
+            &.visible-xs {
+              font-size: 18px;
+            }
+          }
+
+          &.on {
+            background-color: $brand-primary;
+            color: #fff;
+            border-color: transparent;
+
+            i {
+              display: inline-block;
+              // margin-right: 3px;
+            }
+          }
+        }
+      }
+
+      strong {
+        display: block;
+        margin-top: 20px;
+        padding: 0 120px 0 20px;
+      }
+
+      .btn-right {
+        top: 12px;
+        right: 15px;
+        margin: 0;
+
+        .btn {
+          color: $gray-light;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .theme-select-list {
+    .theme-desc {
+      padding-left: 125px;
+    }
+
+    ul {
+      li {
+        padding-left: 5px;
+
+        .skin-select-btn {
+          .btn {
+            width: 86px;
+
+            &.on {
+              i {
+                margin-right: 3px;
+              }
+            }
+          }
+        }
+
+        strong {
+          padding-right: 300px;
+        }
+      }
+    }
+
+    .theme-item {
+      &.blank-theme-item {
+        .skin-select-btn {
+          .btn {
+            width: 86px;
+
+            &.on {
+              i {
+                margin-right: 3px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

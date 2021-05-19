@@ -1,0 +1,322 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.xe-label {
+  display: block;
+  position: relative;
+  min-width: $xe-label-size;
+  min-height: $xe-label-size;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+  cursor: pointer;
+  line-height: 19px;
+  font-size: 14px;
+
+  .xe-label-text {
+    display: inline-block;
+    padding-left: 25px;
+    color: $text-color;
+  }
+
+  input {
+    &[type="checkbox"],
+    &[type="radio"] {
+      overflow: hidden;
+      position: absolute;
+      width: 0;
+      height: 0;
+      border: 0;
+      font-size: 0;
+      line-height: 0;
+      left: -9999px;
+    }
+  }
+
+  > input {
+    &[type="checkbox"] + .xe-input-helper {
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: $xe-label-size;
+      height: $xe-label-size;
+      background-color: #fff;
+      border: 1px solid $xe-input-border;
+      border-radius: $border-radius-base;
+      vertical-align: middle;
+    }
+
+    &[type="radio"] + .xe-input-helper {
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: $xe-label-size;
+      height: $xe-label-size;
+      background-color: #fff;
+      border: 1px solid $xe-input-border;
+      border-radius: $border-radius-base;
+      vertical-align: middle;
+      border-radius: 50%;
+    }
+
+    &[type="checkbox"]:hover + .xe-input-helper,
+    &[type="radio"]:hover + .xe-input-helper {
+      border-color: $xe-label-color;
+    }
+
+    &[type="checkbox"]:checked + .xe-input-helper {
+      border-color: transparent;
+      background-color: $xe-label-color;
+    }
+
+    &[type="radio"]:checked + .xe-input-helper {
+      border-color: $xe-label-color;
+    }
+
+    &[type="checkbox"]:checked + .xe-input-helper::after {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 8px;
+      height: 12px;
+      margin-top: -8px;
+      margin-left: -4px;
+      border-right: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      transform: rotate(40deg);
+      content: "";
+    }
+
+    &[type="radio"]:checked + .xe-input-helper::after {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 10px;
+      height: 10px;
+      margin-top: -5px;
+      margin-left: -5px;
+      border-right: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      transform: rotate(40deg);
+      content: "";
+      border: none;
+      background-color: $xe-label-color;
+      border-radius: 50%;
+    }
+
+    &[type="checkbox"]:disabled + .xe-input-helper,
+    &[type="radio"]:disabled + .xe-input-helper {
+      border-color: #dedfe2;
+    }
+
+    &[type="checkbox"]:disabled:checked + .xe-input-helper,
+    &[type="radio"]:disabled:checked + .xe-input-helper::after {
+      border-color: transparent;
+      background-color: #c8c9cc;
+    }
+
+    &[type="checkbox"]:disabled + .xe-input-helper + .xe-label-text,
+    &[type="radio"]:disabled + .xe-input-helper + .xe-label-text {
+      color: #b5b7bd;
+    }
+  }
+}
+
+.xe-form-label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.xe-form-group {
+  display: block;
+  margin-bottom: $xe-form-group-bottom-margin;
+}
+
+.xe-form-control {
+  display: block;
+  width: 100%;
+  height: $input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
+  padding: $padding-base-vertical $padding-base-horizontal;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $input-color;
+  background-color: $input-bg;
+  border: 1px solid $input-border;
+  border-radius: $input-border-radius; // Note: This has no effect on <select>s in some browsers, due to the limited stylability of <select>s in CSS.
+  box-shadow: none;
+  outline: none;
+
+  // Customize the `:focus` state to imitate native WebKit styles.
+
+
+  // Placeholder
+  @include placeholder;
+
+  // Unstyle the caret on `<select>`s in IE10+.
+  &::-ms-expand {
+    border: 0;
+    background-color: transparent;
+  }
+
+  // Disabled and read-only inputs
+  //
+  // HTML5 says that controls under a fieldset > legend:first-child won't be
+  // disabled if the fieldset is disabled. Due to implementation difficulty, we
+  // don't honor that edge case; we style them as disabled anyway.
+  &[disabled],
+  &[readonly],
+  fieldset[disabled] & {
+    background-color: $input-bg-disabled;
+    opacity: 1; // iOS fix for unreadable disabled content; see https://github.com/twbs/bootstrap/issues/11655
+  }
+
+  &[disabled],
+  fieldset[disabled] & {
+    cursor: $cursor-disabled;
+  }
+
+  &:focus {
+    box-shadow: none;
+    border-color: $brand-primary;
+  }
+}
+
+textarea.xe-form-control {
+  height: auto;
+}
+
+@mixin form-inline {
+
+  // Kick in the inline
+  @media (min-width: $screen-sm-min) {
+    // Inline-block all the things for "inline"
+    .xe-form-group {
+      display: inline-block;
+      margin-bottom: 0;
+      margin-right: 20px;
+      vertical-align: middle;
+    }
+
+    // In navbar-form, allow folks to *not* use `.form-group`
+    .xe-form-control {
+      display: inline-block;
+      width: auto; // Prevent labels from stacking above inputs in `.form-group`
+      vertical-align: middle;
+    }
+
+    .xe-input-group {
+      display: inline-table;
+      vertical-align: middle;
+
+      .xe-input-group-addon,
+      .xe-input-group-btn,
+      .xe-form-control {
+        width: auto;
+      }
+    }
+
+    // Input groups need that 100% width though
+    .xe-input-group > .xe-form-control {
+      width: 100%;
+    }
+
+    .xe-label {
+      display: inline-block;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-right: 20px;
+      vertical-align: middle;
+
+      label {
+        padding-left: 0;
+      }
+    }
+    // .xe-dropdown > .xe-btn,
+    // .xe-dropup > .xe-btn,
+    .xe-select-box.xe-btn,
+    .xe-dropdown,
+    .xe-dropup,
+    .xe-select-label .label-input {
+      display: inline-block;
+      width: auto;
+    }
+  }
+}
+
+.xe-form-inline {
+  @include form-inline;
+
+  margin-bottom: $xe-form-group-bottom-margin;
+}
+
+@include input-size('.xe-input-sm', $input-height-small, $padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $input-border-radius-small);
+
+.xe-form-group-sm {
+  .xe-form-control {
+    height: $input-height-small;
+    padding: $padding-small-vertical $padding-small-horizontal;
+    font-size: $font-size-small;
+    line-height: $line-height-small;
+    border-radius: $input-border-radius-small;
+  }
+
+  select.xe-form-control {
+    height: $input-height-small;
+    line-height: $input-height-small;
+  }
+
+  textarea.xe-form-control,
+  select[multiple].xe-form-control {
+    height: auto;
+  }
+}
+
+@include input-size('.xe-input-lg', $input-height-large, $padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $input-border-radius-large);
+
+.xe-form-group-lg {
+  .xe-form-control {
+    height: $input-height-large;
+    padding: $padding-large-vertical $padding-large-horizontal;
+    font-size: $font-size-large;
+    line-height: $line-height-large;
+    border-radius: $input-border-radius-large;
+  }
+
+  select.xe-form-control {
+    height: $input-height-large;
+    line-height: $input-height-large;
+  }
+
+  textarea.xe-form-control,
+  select[multiple].form-control {
+    height: auto;
+  }
+}
+
+.wrong-input .xe-form-control,
+.wrong-input.xe-form-control {
+  border-color: #dd251e !important;
+  color: #db2828;
+}
+
+.success-input .xe-form-control,
+.success-input.xe-form-control {
+  border-color: #2c8beb !important;
+}
+
+.text-message {
+  display: block;
+  margin-top: 5px !important;
+  font-size: 13px;
+  color: #2c8beb;
+}
+
+.wrong-input .text-message,
+.wrong-input.text-message {
+  color: #db2828 !important;
+}

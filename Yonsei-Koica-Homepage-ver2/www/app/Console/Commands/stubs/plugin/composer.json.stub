@@ -1,0 +1,36 @@
+{
+  "name": "xpressengine-plugin/DummyPluginName",
+  "description": "This Package is Xpressengine Plugin - DummyPluginTitle.",
+  "keywords": [
+    "xpressengine",
+    "plugin"
+  ],
+  "license": "LGPL-3.0-or-later",
+  "version": "1.0.0",
+  "type": "xpressengine-plugin",
+  "support": {
+    "email": "input@your.email"
+  },
+  "authors": [
+    {
+      "name": "input your name",
+      "email": "input@your.email",
+      "homepage": "http://input.your.site",
+      "role": "Developer"
+    }
+  ],
+  "extra": {
+    "xpressengine": {
+      "title": "DummyPluginTitle",
+      "component": {}
+    }
+  },
+  "require": {
+    "xpressengine/xpressengine": "DummyCoreVer"
+  },
+  "autoload": {
+    "psr-4": {
+      "DummyNamespace\\": "src/"
+    }
+  }
+}

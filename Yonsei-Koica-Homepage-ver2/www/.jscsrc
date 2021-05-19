@@ -1,0 +1,34 @@
+{
+    "preset": "airbnb",
+    "requireCurlyBraces": null, // or false
+    "maxErrors": null,
+    "maximumLineLength": null,
+    "excludeFiles": [
+        "./app/**",
+        "./bootstrap/**",
+        "./config/**",
+        "./core/**",
+        "./database/**",
+        "./migrations/**",
+        "./plugins/**",
+        "./storage/**",
+        "./test/**",
+        "./vendor/**",
+        "./web_installer/**",
+        "./gulpfile.babel.js",
+        "./webpack.config.js",
+        "./webpack.dev.config.js",
+        "./webpack.prod.config.js",
+        "./resources/gulpTasks/**",
+        "./**/*.png",
+        "./**/*.jpg",
+        "./**/*.gif",
+        "./**/*.scss",
+        "./**/*.css",
+        "./resources/assets/core/tree/**",
+        "./resources/assets/core/xe-ui-component/js/**",
+        "./resources/assets/core/permission/permission.js"
+    ],
+    "fileExtensions": [".js", ".jsx"],
+    "fix": true
+}

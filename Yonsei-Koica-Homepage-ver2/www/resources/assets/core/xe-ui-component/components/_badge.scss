@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+/* xe-badge */
+
+@mixin badge-hover($color) {
+  background-color: darken($color, 5%);
+}
+
+@mixin badge-outline($color) {
+  color: $color;
+  background-color: transparent;
+  border: 1px solid $color;
+}
+
+.xe-badge {
+  display: inline-block;
+  vertical-align: baseline;
+  transition: background 0.1s ease;
+  font-size: 10px;
+  min-width: 2em;
+  min-height: 2em;
+  padding: 0.5em 0.7em;
+  border-radius: 500rem;
+  border: 1px solid transparent;
+  line-height: 1em;
+  text-align: center;
+  color: #fff;
+
+  &.medium {
+    min-width: 2.1em;
+    min-height: 2.1em;
+    line-height: 1.1em;
+    font-size: 11px;
+  }
+
+  &.large {
+    min-width: 2.2em;
+    min-height: 2.2em;
+    line-height: 1.2em;
+    font-size: 12px;
+  }
+
+  &.empty {
+    min-width: 0;
+    min-height: 0;
+    line-height: 0;
+    font-size: inherit;
+    padding: 4px;
+  }
+
+  &.floating {
+    position: absolute;
+    font-size: 10px;
+    top: -0.5em;
+    left: 100%;
+    margin: 0 0 0 -1.5em;
+  }
+
+  &.xe-primary {
+    background-color: $brand-primary;
+
+    &:hover {
+      @include badge-hover($brand-primary);
+    }
+  }
+
+  &.xe-success {
+    background-color: $brand-success;
+
+    &:hover {
+      @include badge-hover($brand-success);
+    }
+  }
+
+  &.xe-positive {
+    background-color: $brand-positive;
+
+    &:hover {
+      @include badge-hover($brand-positive);
+    }
+  }
+
+  &.xe-warning {
+    background-color: $brand-warning;
+
+    &:hover {
+      @include badge-hover($brand-warning);
+    }
+  }
+
+  &.xe-danger {
+    background-color: $brand-danger;
+
+    &:hover {
+      @include badge-hover($brand-danger);
+    }
+  }
+
+  &.xe-fail {
+    background-color: $brand-fail;
+
+    &:hover {
+      @include badge-hover($brand-fail);
+    }
+  }
+
+  &.xe-black {
+    background-color: $brand-black;
+
+    &:hover {
+      @include badge-hover($brand-black);
+    }
+  }
+
+  // outline version
+
+  &.xe-primary-outline {
+    @include badge-outline($brand-primary);
+  }
+
+  &.xe-success-outline {
+    @include badge-outline($brand-success);
+  }
+
+  &.xe-positive-outline {
+    @include badge-outline($brand-positive);
+  }
+
+  &.xe-warning-outline {
+    @include badge-outline($brand-warning);
+  }
+
+  &.xe-danger-outline {
+    @include badge-outline($brand-danger);
+  }
+
+  &.xe-fail-outline {
+    @include badge-outline($brand-fail);
+  }
+
+  &.xe-black-outline {
+    @include badge-outline($brand-black);
+  }
+}
